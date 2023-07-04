@@ -1,5 +1,4 @@
 from sqlalchemy import Column, Integer, String
-from pydantic import BaseModel
 from db import Base
 from db import ENGINE
 
@@ -10,13 +9,6 @@ class TaskTable(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     title = Column(String(30), nullable=False)
     done = Column(Integer, nullable=False)
-
-
-# モデル定義 
-class Task(BaseModel):
-    id: int
-    title: str
-    done: int
 
 
 def main():

@@ -11,5 +11,5 @@ git clone https://github.com/team-411/kenshu-fastapi-template.git
 
 ## 起動
 ```
-~/kenshu-fastapi-template $ docker-compose up -d
+docker-compose up -d
 ```
