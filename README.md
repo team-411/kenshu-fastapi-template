@@ -1,7 +1,15 @@
 # kenshu-fastapi-template
 
-## install 
+## 準備
+- Dockerの環境構築を終了させること
+    - [参考](https://team-lab.github.io/skillup/step1/04a-docker.html)
 
+## レポジトリのクローン
 ```
-pip install -r requirements.txt
+git clone https://github.com/team-411/kenshu-fastapi-template.git
+```
+
+## 起動
+```
+~/kenshu-fastapi-template $ docker-compose up -d
 ```
