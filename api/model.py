@@ -5,12 +5,12 @@ from db import ENGINE
 
 # テーブル定義
 class TaskTable(Base):
-    __tablename__ = 'task'
+    __tablename__ = "tasks"
     id = Column(Integer, primary_key=True, autoincrement=True)
     title = Column(String(30), nullable=False)
-    done = Column(Integer, nullable=False)
-
-
+    done = Column(Integer, nullable=False, default=0)
+    
+    
 def main():
     # マイグレーションなどを記述
     Base.metadata.create_all(bind=ENGINE)
@@ -18,4 +18,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
